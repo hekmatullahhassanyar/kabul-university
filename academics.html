@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabul University - Academics & Admissions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-navy sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Kabul University</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="academics.html">Academics & Admissions</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg-custom-navy text-white py-5 text-center">
+    <div class="container">
+      <h1 class="fw-bold">Academic Programs & Admissions</h1>
+      <p class="lead mb-0">Find your degree program and submit your application online</p>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-custom-navy fw-bold mb-4">Undergraduate Programs</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle table-custom">
+          <thead>
+            <tr>
+              <th>Faculty</th>
+              <th>Degree Program</th>
+              <th>Duration</th>
+              <th>Language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Computer Science</td>
+              <td>B.S. Software Engineering</td>
+              <td>4 Years</td>
+              <td>English / Dari</td>
+            </tr>
+            <tr>
+              <td>Engineering</td>
+              <td>B.S. Civil Engineering</td>
+              <td>4 Years</td>
+              <td>Dari / Pashto</td>
+            </tr>
+            <tr>
+              <td>Economics</td>
+              <td>B.A. Business Administration</td>
+              <td>4 Years</td>
+              <td>English / Dari</td>
+            </tr>
+            <tr>
+              <td>Law & Political Science</td>
+              <td>Bachelor of Law (LL.B.)</td>
+              <td>4 Years</td>
+              <td>Dari / Pashto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card p-4">
+            <h2 class="text-custom-navy fw-bold text-center mb-4">Online Application Form</h2>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="facultySelect" class="form-label">Preferred Faculty</label>
+                  <select class="form-select" id="facultySelect" required>
+                    <option value="" selected disabled>Choose faculty...</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="eng">Engineering</option>
+                    <option value="eco">Economics</option>
+                    <option value="law">Law & Political Science</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="statement" class="form-label">Personal Statement</label>
+                  <textarea class="form-control" id="statement" rows="4" placeholder="Briefly state why you want to join Kabul University..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-success btn-lg px-5">Submit Application</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center mt-auto">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Kabul University Project. Designed for Web Technologies Course.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

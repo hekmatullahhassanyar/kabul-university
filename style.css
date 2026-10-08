@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #002147;
+  --accent-color: #006a4e;
+  --light-bg: #f8f9fa;
+  --dark-text: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-text);
+  background-color: #ffffff;
+}
+
+.bg-custom-navy {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-custom-green {
+  background-color: var(--accent-color) !important;
+}
+
+.text-custom-navy {
+  color: var(--primary-color) !important;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 33, 71, 0.85), rgba(0, 33, 71, 0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200') center/cover no-repeat;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.table-custom th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+  .display-4 {
+    font-size: 2.2rem;
+  }
+}
