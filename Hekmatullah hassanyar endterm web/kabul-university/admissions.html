@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admissions | Kabul University</title>
+<meta name="description" content="How to apply to Kabul University: steps, FAQ and online application form.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<div class="page-head"><div class="container"><h1>Admissions</h1><p>Read the steps, check the questions other applicants ask, then send your interest form.</p></div></div>
+<section><div class="container"><div class="row g-5">
+ <div class="col-lg-6">
+  <h2 class="mb-3">Apply in four steps</h2>
+  <ol class="ps-3"><li class="mb-2"><strong>Pick a program</strong> on the <a href="programs.html">Programs page</a>.</li><li class="mb-2"><strong>Prepare documents:</strong> school certificate, ID and photos.</li><li class="mb-2"><strong>Send the interest form</strong> on this page.</li><li><strong>Follow the instructions</strong> sent by the admissions office.</li></ol>
+  <figure class="photo-fig"><img src="images/students.jpg" alt="Students walking together on the university campus" onerror="this.style.display='none'"><figcaption>Campus life is part of your first year.</figcaption></figure>
+  <h2 class="mt-5 mb-3" id="faq">Questions applicants ask</h2>
+  <div id="faqList"></div>
+ </div>
+ <div class="col-lg-6"><div class="form-card">
+  <h2 class="h3">Interest form</h2><p class="text-secondary">All fields are required. This is a course project demo, so nothing is sent.</p>
+  <form id="apply" novalidate>
+   <div class="mb-3"><label class="form-label" for="fullName">Full name</label><input class="form-control" id="fullName" name="fullName" autocomplete="name"><div class="err" id="err-fullName"></div></div>
+   <div class="row"><div class="col-md-6 mb-3"><label class="form-label" for="email">Email</label><input class="form-control" id="email" name="email" type="email" autocomplete="email"><div class="err" id="err-email"></div></div>
+   <div class="col-md-6 mb-3"><label class="form-label" for="phone">Phone</label><input class="form-control" id="phone" name="phone" type="tel" placeholder="+93 70 123 4567" autocomplete="tel"><div class="err" id="err-phone"></div></div></div>
+   <div class="row"><div class="col-md-6 mb-3"><label class="form-label" for="birth">Date of birth</label><input class="form-control" id="birth" name="birth" type="date"><div class="err" id="err-birth"></div></div>
+   <div class="col-md-6 mb-3"><label class="form-label" for="score">School score (40–100)</label><input class="form-control" id="score" name="score" type="number" inputmode="numeric"><div class="err" id="err-score"></div></div></div>
+   <div class="mb-3"><label class="form-label" for="program">Program of interest</label><select class="form-select" id="program" name="program"><option value="">Choose a program</option></select><div class="err" id="err-program"></div></div>
+   <div class="mb-3"><label class="form-label" for="why">Why do you want to study here?</label><textarea class="form-control" id="why" name="why" rows="3"></textarea><div class="err" id="err-why"></div></div>
+   <button class="btn btn-kb w-100" type="submit">Send my interest</button>
+   <div class="success-box" id="ok" role="status" tabindex="-1"><strong>Thank you!</strong> Your interest form was received. Check your email for the next steps.</div>
+  </form>
+ </div></div>
+</div></div></section>
+<section aria-labelledby="bk"><div class="container"><div class="row g-4">
+ <div class="col-lg-8"><h2 id="bk">Book a campus visit</h2><p>Choose a tour time. Seats are limited, and you can cancel at any time.</p><div class="row g-3" id="slots"></div><div id="bookMsg" role="status"></div></div>
+ <div class="col-lg-4"><div class="kb-card"><h3>My visits: <span id="myCount">0</span></h3><ul class="ps-3 mb-0" id="myList"></ul></div></div>
+</div></div></section>
+<section class="bg-white" aria-labelledby="off"><div class="container"><h2 id="off" class="mb-3">Student services and office hours</h2>
+ <div class="table-wrap"><table class="table align-middle mb-0"><caption class="visually-hidden">Campus services with type, hours and who can use them</caption>
+ <thead><tr><th scope="col">Service</th><th scope="col">Type</th><th scope="col">Hours</th><th scope="col">Who can use it</th></tr></thead>
+ <tbody><tr><th scope="row">Central Library</th><td>Study</td><td>08:00 – 17:00</td><td>All students</td></tr>
+ <tr><th scope="row">Computer Labs</th><td>Technology</td><td>08:30 – 16:00</td><td>With student card</td></tr>
+ <tr><th scope="row">Sports Field</th><td>Recreation</td><td>07:00 – 18:00</td><td>All students</td></tr>
+ <tr><th scope="row">Admissions Office</th><td>Service</td><td>08:00 – 16:00, Saturday – Wednesday</td><td>Open to visitors</td></tr></tbody></table></div>
+ <p class="small text-secondary mt-2">Kabul University, Kabul, Afghanistan. Hours are sample content for a course project; use official university channels for real applications.</p></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validate.js"></script><script src="js/admissions.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>

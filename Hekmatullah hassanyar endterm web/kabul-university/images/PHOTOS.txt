@@ -1,0 +1,3 @@
+Add these JPG files to this folder (about 1600px wide, under 400 KB each) and fill the "credit" text in js/data.js:
+hero.jpg (home banner), gate.jpg, library.jpg, lab.jpg, garden.jpg, sports.jpg, hall.jpg, students.jpg (admissions page).
+Free sources: commons.wikimedia.org (search "Kabul University"), unsplash.com, pexels.com. Credit author + license in the site and the report.
