@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Log in | Kabul University</title>
+<meta name="description" content="Log in or create a demo account to save your programs, visits and events.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="js/theme.js"></script>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<div class="page-head"><div class="container"><h1>My account</h1><p>Log in or sign up to keep your shortlist, campus visits, events and exam result on your account.</p></div></div>
+<section><div class="container"><div class="row justify-content-center"><div class="col-lg-6"><div class="form-card">
+ <div class="tabs" role="tablist" aria-label="Account">
+  <button class="tab" type="button" role="tab" id="tabLogin" aria-selected="true" aria-controls="panelLogin">Log in</button>
+  <button class="tab" type="button" role="tab" id="tabSignup" aria-selected="false" aria-controls="panelSignup">Sign up</button>
+ </div>
+ <p class="demo-note">Demo only. Accounts are saved in this browser (localStorage), not on a server. Do not use a real password.</p>
+ <div id="panelLogin" role="tabpanel" aria-labelledby="tabLogin">
+  <h2 class="h3 mb-3">Welcome back</h2>
+  <form id="login" novalidate>
+   <div class="error-box" id="loginErr" role="alert"></div>
+   <div class="mb-3"><label class="form-label" for="lemail">Email</label><input class="form-control" id="lemail" name="lemail" type="email" autocomplete="email"><div class="err" id="err-lemail"></div></div>
+   <div class="mb-3"><label class="form-label" for="lpass">Password</label><input class="form-control" id="lpass" name="lpass" type="password" autocomplete="current-password"><div class="err" id="err-lpass"></div></div>
+   <button class="btn btn-kb w-100" type="submit">Log in</button>
+   <div class="success-box" id="loginOk" role="status"><strong>Welcome back!</strong> Opening your profile…</div>
+  </form>
+ </div>
+ <div id="panelSignup" role="tabpanel" aria-labelledby="tabSignup" style="display:none">
+  <h2 class="h3 mb-3">Create an account</h2>
+  <form id="signup" novalidate>
+   <div class="error-box" id="signupErr" role="alert"></div>
+   <div class="mb-3"><label class="form-label" for="sname">Full name</label><input class="form-control" id="sname" name="sname" autocomplete="name"><div class="err" id="err-sname"></div></div>
+   <div class="mb-3"><label class="form-label" for="semail">Email</label><input class="form-control" id="semail" name="semail" type="email" autocomplete="email"><div class="err" id="err-semail"></div></div>
+   <div class="mb-3"><label class="form-label" for="spass">Password</label><input class="form-control" id="spass" name="spass" type="password" autocomplete="new-password"><div class="err" id="err-spass"></div></div>
+   <div class="mb-3"><label class="form-label" for="sconfirm">Confirm password</label><input class="form-control" id="sconfirm" name="sconfirm" type="password" autocomplete="new-password"><div class="err" id="err-sconfirm"></div></div>
+   <button class="btn btn-kb w-100" type="submit">Create account</button>
+   <div class="success-box" id="signupOk" role="status"><strong>Account created!</strong> Opening your profile…</div>
+  </form>
+ </div>
+</div></div></div></div></section>
+</main>
+<div id="site-footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validate.js"></script><script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My profile | Kabul University</title>
+<meta name="description" content="Your saved programs, campus visits, events and exam result.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="js/theme.js"></script>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+<div class="page-head"><div class="container"><h1>My profile</h1><p>Everything you saved on this website, in one place.</p></div></div>
+<section id="guest"><div class="container"><div class="empty"><h2 class="h4">You are not logged in</h2><p>Log in or create a demo account to see your profile.</p><a class="btn btn-kb" href="account.html">Log in or sign up</a></div></div></section>
+<div id="member" style="display:none">
+<section><div class="container">
+ <div class="kb-card flex-row align-items-center gap-3 flex-wrap mb-4"><div class="avatar" id="pAvatar" aria-hidden="true"></div>
+  <div class="flex-grow-1"><h2 class="h3 mb-0" id="pName"></h2><p class="mb-0" id="pEmail"></p><p class="small text-secondary mb-0" id="pJoined"></p></div>
+  <button class="btn btn-line" id="pLogout" type="button">Log out</button></div>
+ <div class="row g-3 text-center">
+  <div class="col-6 col-lg-3"><div class="stat"><b id="sSaved">0</b>saved programs</div></div>
+  <div class="col-6 col-lg-3"><div class="stat"><b id="sCredits">0</b>credits used<div class="meter mt-2" aria-hidden="true"><div id="pCreditMeter"></div></div></div></div>
+  <div class="col-6 col-lg-3"><div class="stat"><b id="sVisits">0</b>campus visits<div class="meter mt-2" aria-hidden="true"><div id="pVisitMeter"></div></div></div></div>
+  <div class="col-6 col-lg-3"><div class="stat"><b id="sEvents">0</b>events</div></div>
+ </div></div></section>
+<section class="alt"><div class="container"><div class="row g-4">
+ <div class="col-lg-6"><div class="kb-card"><div class="d-flex justify-content-between align-items-center"><h2 class="h4 mb-0">Saved programs</h2><button class="btn btn-danger-line btn-sm" type="button" data-clear="shortlist">Clear all</button></div><ul class="saved-list mt-2" id="pProgList"></ul><p class="small mb-0 mt-2" id="pPlan"></p></div></div>
+ <div class="col-lg-6"><div class="kb-card"><div class="d-flex justify-content-between align-items-center"><h2 class="h4 mb-0">Campus visits</h2><button class="btn btn-danger-line btn-sm" type="button" data-clear="visits">Clear all</button></div><ul class="saved-list mt-2" id="pVisitList"></ul></div></div>
+ <div class="col-lg-6"><div class="kb-card"><div class="d-flex justify-content-between align-items-center"><h2 class="h4 mb-0">Registered events</h2><button class="btn btn-danger-line btn-sm" type="button" data-clear="events">Clear all</button></div><ul class="saved-list mt-2" id="pEventList"></ul></div></div>
+ <div class="col-lg-6"><div class="kb-card"><div class="d-flex justify-content-between align-items-center"><h2 class="h4 mb-0">Practice exam</h2><button class="btn btn-danger-line btn-sm" type="button" data-clear="quiz">Clear</button></div><p class="mt-3 mb-1">Best score: <strong id="sQuiz">–</strong></p><p class="small mb-0" id="pQuiz"></p></div></div>
+</div></div></section>
+<section><div class="container"><h2 class="h4">How your data is saved</h2><p>Your saved items are stored as JSON text in this browser (localStorage). Nothing is sent to a server.</p>
+ <button class="btn btn-line mb-3" id="jsonBtn" type="button">Show my saved data (JSON)</button><pre class="json" id="jsonOut"></pre></div></section>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
